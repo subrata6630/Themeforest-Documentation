@@ -1,69 +1,22 @@
 <!doctype html>
 <html lang="en-us">
+
 <head>
 	<meta charset="utf-8">
-
 	<title>HABIBA - HABIBA-Portfolio Landing Page Template</title>
-
 	<meta name="description" content="">
 	<meta name="author" content="Subrata Deb Nath">
 	<meta name="copyright" content="Subrata Deb Nath">
 	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
 	<meta name="date" content="2016-11-14T00:00:00+01:00">
-
 	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
-
-
+	<link rel="stylesheet" href="assets/css/style.css" media="all">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
-	<script src="assets/js/jquery.js"></script>
-
-	<script src="assets/js/jquery.scrollTo.js"></script>
-	<script src="assets/js/jquery.easing.js"></script>
-
-	<script>document.createElement('section');var duration='500',easing='swing';</script>
-	<script src="assets/js/script.js"></script>
-
-	<style>
-		html{background-color:#FFFFFF;color:#262626;}
-		::-moz-selection{background:#FFCC99;color:#262626;}
-		::selection{background:#FFCC99;color:#262626;}
-		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_1.png);}
-		a{color:#0000FF;}
-		.btn {
-			border-radius:3px;
-		}
-		.btn-primary {
-			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
-			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
-			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#262626), to(#0044CC));
-			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
-			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
-			  background-image: linear-gradient(top, #0088CC, #0044CC);
-			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
-			  border-color: #0044CC #0044CC #bfbfbf;
-			  color:#FFFFFF;
-		}
-		.btn-primary:hover,
-		.btn-primary:active,
-		.btn-primary.active,
-		.btn-primary.disabled,
-		.btn-primary[disabled] {
-		  border-color: #0088CC #0088CC #bfbfbf;
-		  background-color: #0044CC;
-		}
-		hr{border-top:1px solid #262626;border-bottom:1px solid #262626;}
-		#documenter_sidebar, #documenter_sidebar ul a{background-color:#262626;color:#FFFFFF;}
-		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #000000;-moz-text-shadow:1px 1px 0px #000000;text-shadow:1px 1px 0px #000000;}
-		#documenter_sidebar ul{border-top:1px solid #262626;}
-		#documenter_sidebar ul a{border-top:1px solid #000000;border-bottom:1px solid #262626;color:#FFFFFF;}
-		#documenter_sidebar ul a:hover{background:#FFCC99;color:#262626;border-top:1px solid #FFCC99;}
-		#documenter_sidebar ul a.current{background:#FFCC99;color:#262626;border-top:1px solid #FFCC99;}
-		#documenter_copyright{display:block !important;visibility:visible !important;}
-	</style>
 
 </head>
-<body class="documenter-project-habiba">
+
+<body class="documenter-project-habiba" ng-app="ngCip">
 	<div id="documenter_sidebar">
 		<a href="#documenter_cover" id="documenter_logo"></a>
 		<ul id="documenter_nav">
@@ -78,21 +31,14 @@
 			<li><a href="#support" title="Support">Support</a></li>
 
 		</ul>
-		<div id="documenter_copyright">Copyright Sbtechbd Technology 2017<br>
-		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a>
+		<div id="documenter_copyright">Copyright Sbtechbd Technology 2017<br> made with the <a href="http://rxa.li/documenter">Documenter v2.0</a>
 		</div>
 	</div>
-	<div id="documenter_content">
-
-
-
-
-
-
-
-
-
-
+	<div ng-view id="documenter_content">
 	</div>
+	<script src="assets/js/angular.min.js"></script>
+	<script src="assets/js/angular-route.min.js"></script>
+	<script src="assets/js/script.js"></script>
 </body>
+
 </html>
